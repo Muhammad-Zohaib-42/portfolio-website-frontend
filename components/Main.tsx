@@ -1,10 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import About from "./About";
-import Contact from "./Contact";
+import dynamic from "next/dynamic";
 import Header from "./Header";
-import Portfolio from "./Portfolio";
+import About from "./About";
+
+const Portfolio = dynamic(() => import('./Portfolio'), {
+  loading: () => <div className="text-slate-400">Loading portfolio...</div>
+})
+
+const Contact = dynamic(() => import('./Contact'), {
+  loading: () => <div className="text-slate-400">Loading Contact...</div>
+})
 
 const Main = () => {
   const [activeTab, setActiveTab] = useState<string>("about");

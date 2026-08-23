@@ -1,4 +1,5 @@
 import Image from "next/image";
+import StatusBadge from "./StatusBadge";
 
 const Sidebar = () => {
   return (
@@ -19,10 +20,7 @@ const Sidebar = () => {
         Full-Stack MERN Developer
       </div>
 
-      <div className="inline-flex items-center gap-2 bg-[#ecfdf5] text-[#065f46] px-3 py-1.5 rounded-full text-xs font-semibold mb-6 border border-[#d1fae5] w-fit">
-        <div className="w-2 h-2 bg-[#10b981] rounded-full animate-pulse shadow-[0_0_0_0_rgba(16,185,129,0.4)]"></div>
-        Open to Work
-      </div>
+      <StatusBadge />
 
       <ul className="w-full mb-6 border-t border-b border-[#e2e8f0] py-4 space-y-3">
         <a target="_blank" href="mailto:muhammadzohaibranjha42@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20there,%20I%20would%20like%20to%20connect!" className="flex items-center gap-2.5 text-[0.8rem] text-[#64748b]" title="muhammadzohaibranjha42@gmail.com">
