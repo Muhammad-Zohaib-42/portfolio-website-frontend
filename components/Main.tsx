@@ -6,11 +6,11 @@ import Header from "./Header";
 import About from "./About";
 
 const Portfolio = dynamic(() => import('./Portfolio'), {
-  loading: () => <div className="text-slate-400">Loading portfolio...</div>
+  loading: () => <div className="h-screen text-slate-400">Loading portfolio...</div>
 })
 
 const Contact = dynamic(() => import('./Contact'), {
-  loading: () => <div className="text-slate-400">Loading Contact...</div>
+  loading: () => <div className="h-screen text-slate-400">Loading Contact...</div>
 })
 
 const Main = () => {
