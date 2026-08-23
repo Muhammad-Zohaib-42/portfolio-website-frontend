@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Muhammad Zohaib | Full-Stack MERN Developer",
     description: "Explore the portfolio of Muhammad Zohaib, a Full-Stack MERN Developer specializing in modern web applications.",
-  },
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
