@@ -21,7 +21,7 @@ const Portfolio = () => {
               AI Code Reviewer Platform
             </span>
             <a
-              href="https://ai-code-reviewer-frontend-46gjbwhfx.vercel.app/"
+              href="https://code-reviewer-liart-three.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#2563eb] hover:text-[#1d4ed8] bg-white border border-[#e2e8f0] px-3 py-1.5 rounded-md shadow-sm transition-all hover:border-[#2563eb]"
@@ -32,21 +32,15 @@ const Portfolio = () => {
           </div>
           <div className="p-6 flex-1 flex flex-col justify-between">
             <p className="text-[0.85rem] text-[#64748b] leading-normal mb-4">
-              An intelligent Full-Stack code analysis tool featuring an
-              interactive code editor with syntax highlighting on the left,
-              sending snippets to an Express backend powered by the Gemini API
-              to generate detailed code reviews rendered dynamically via
-              Markdown and rehype-highlight.
+              An intelligent, client-side code analysis application featuring an interactive Monaco Code Editor supporting multiple languages and frameworks. Powered directly by the Gemini API, it performs deep code diagnostics and instantly returns structured verdicts, detailed mistake breakdowns, and clean optimized solutions, rendered seamlessly via Markdown and syntax-highlighted code blocks.
             </p>
             <div className="flex flex-wrap gap-2">
               {[
                 "React",
                 "Tailwind CSS",
                 "Gemini API",
-                "Express.js",
-                "React Simple Code Editor",
-                "PrismJS",
-                "Markdown",
+                "Monaco Editor",
+                "React Markdown",
                 "Rehype Highlight",
               ].map((skill) => (
                 <span
